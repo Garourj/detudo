@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulação do DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Projeto DOM Interativo</h1>
+
+<p id="texto">Texto inicial</p>
+
+<button id="btnTexto">Alterar Texto</button>
+<button id="btnCor">Alterar Cor</button>
+<button id="btnFonte">Aumentar Fonte</button>
+
+<hr>
+
+<h2>Formulário</h2>
+
+<input type="text" id="nome" placeholder="Digite seu nome">
+<button id="btnEnviar">Enviar</button>
+
+<p id="mensagem"></p>
+
+<div id="caixa">Área com fundo alterável</div>
+
+<button id="btnFundo">Mudar Fundo da Caixa</button>
+
+<script src="script.js"></script>
+</body>
+</html>

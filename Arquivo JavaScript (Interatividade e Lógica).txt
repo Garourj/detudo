@@ -1,0 +1,51 @@
+const texto = document.getElementById("texto");
+const btnTexto = document.getElementById("btnTexto");
+const btnCor = document.getElementById("btnCor");
+const btnFonte = document.getElementById("btnFonte");
+const btnEnviar = document.getElementById("btnEnviar");
+const nome = document.getElementById("nome");
+const mensagem = document.getElementById("mensagem");
+const caixa = document.getElementById("caixa");
+const btnFundo = document.getElementById("btnFundo");
+
+let fonteGrande = false;
+
+// Evento: alterar texto
+btnTexto.addEventListener("click", function () {
+    texto.innerText = "Texto alterado com JavaScript!";
+});
+
+// Evento: mudar cor do texto
+btnCor.addEventListener("click", function () {
+    texto.style.color = "blue";
+});
+
+// Evento: aumentar fonte
+btnFonte.addEventListener("click", function () {
+
+    if (!fonteGrande) {
+        texto.style.fontSize = "24px";
+        fonteGrande = true;
+    } else {
+        texto.style.fontSize = "16px";
+        fonteGrande = false;
+    }
+});
+
+// Validação simples do formulário
+btnEnviar.addEventListener("click", function () {
+
+    if (nome.value === "") {
+        mensagem.innerText = "Por favor, preencha o nome!";
+        mensagem.style.color = "red";
+    } else {
+        mensagem.innerText = "Olá, " + nome.value + "!";
+        mensagem.style.color = "green";
+    }
+});
+
+// Evento: mudar fundo da div
+btnFundo.addEventListener("click", function () {
+    caixa.style.backgroundColor = "lightblue";
+});
+

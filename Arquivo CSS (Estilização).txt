@@ -1,0 +1,16 @@
+body {
+    font-family: Arial;
+    padding: 30px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px;
+}
+
+#caixa {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: lightgray;
+}
+
